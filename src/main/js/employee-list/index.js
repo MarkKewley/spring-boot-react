@@ -8,6 +8,7 @@ export class EmployeeList extends Component {
 		var employees = this.props.employees.map(employee =>
 			<Employee key={employee._links.self.href} employee={employee}/>
 		);
+
 		return (
 			<table className={ css(styles.table) }>
 				<tbody>
